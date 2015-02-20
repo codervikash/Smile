@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Smile</string>
+    <string name="title_activity_maps">Smile</string>
+    <string name="title_activity_blank">Smile</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+</resources>
