@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:scrollbars="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        android:name="com.google.android.gms.maps.MapFragment"
+        android:id="@+id/map"
+        android:layout_width="353dp"
+        android:layout_height="150dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Type of Donation"
+                android:id="@+id/textView"
+                android:textColor="@color/myPrimaryColor"
+                android:textSize="20sp"
+                android:layout_marginRight="3dp"/>
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="20dp">
+                <RadioButton
+                    android:id="@+id/store1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/option1"
+                    android:checked="true"
+                    android:textColor="@color/myPrimaryColor"
+                    android:textSize="18sp"
+                    android:layout_marginBottom="3dp"/>
+
+                <RadioButton
+                    android:id="@+id/store2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/option2"
+                    android:textColor="@color/myPrimaryColor"
+                    android:textSize="18sp"
+                    android:layout_marginBottom="3dp"/>
+
+                <RadioButton
+                    android:id="@+id/store3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/option3"
+                    android:textColor="@color/myPrimaryColor"
+                    android:textSize="18sp"
+                    android:layout_marginBottom="3dp"/>
+                </RadioGroup>
+
+        </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:id="@+id/desclayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Description :"
+            android:id="@+id/textdesc"
+            android:textColor="@color/myPrimaryColor"
+            android:textSize="20sp"
+            android:layout_marginRight="3dp"
+            android:layout_marginEnd="5dp"
+            />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="textAutoCorrect"
+            android:hint="Describe your donation."
+            android:ems="10"
+            android:id="@+id/desctext"
+            android:layout_weight="1" />
+
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:id="@+id/namelayout">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Name:"
+                android:id="@+id/textname"
+                android:textColor="@color/myPrimaryColor"
+                android:textSize="20sp"
+                android:layout_marginRight="3dp"
+                android:layout_marginEnd="5dp"
+                />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:hint="Eg: Sanjay"
+                android:ems="10"
+                android:id="@+id/edittext"
+                android:layout_weight="0.71" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:id="@+id/phonelayout">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Mobile No:"
+                android:id="@+id/textphone"
+                android:textColor="@color/myPrimaryColor"
+                android:textSize="20sp"
+                android:layout_marginRight="3dp"
+                android:layout_marginEnd="5dp"
+                />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="text|phone"
+                android:hint="+91 99 999 XXXXX"
+                android:ems="10"
+                android:id="@+id/editphone"
+                android:layout_weight="0.71" />
+
+
+        </LinearLayout>
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:id="@+id/addresslayout">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Address:"
+            android:id="@+id/textaddress"
+            android:textColor="@color/myPrimaryColor"
+            android:textSize="20sp"
+            android:layout_marginRight="3dp"
+            android:layout_marginEnd="5dp"
+            />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPostalAddress"
+            android:hint="Eg: OMR, Paur"
+            android:ems="10"
+            android:id="@+id/editaddress"
+            android:layout_weight="0.71" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:id="@+id/timelayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Avaibility time:"
+            android:id="@+id/texttime"
+            android:textColor="@color/myPrimaryColor"
+            android:textSize="20sp"
+            android:layout_marginRight="3dp"
+            android:layout_marginEnd="5dp"
+            />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="time"
+            android:hint="From:"
+            android:ems="10"
+            android:id="@+id/timefrom"
+            android:layout_weight="1" />
+
+
+    </LinearLayout>
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:id="@+id/tolayout">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:visibility="invisible"
+                android:text="Avaibility time"
+                android:id="@+id/fromtime"
+                android:textColor="@color/myPrimaryColor"
+                android:textSize="20sp"
+                android:layout_marginRight="3dp"
+                android:layout_marginEnd="5dp"
+                />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:inputType="time"
+                android:ems="10"
+                android:hint="To:"
+                android:id="@+id/timeto"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:id="@+id/button_submit">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Submit"
+            android:id="@+id/button"
+            android:textColor="@color/myDrawerBackground"
+            android:background="@color/myPrimaryColor"
+            android:layout_gravity="bottom"
+            android:padding="15dp"/>
+
+
+    </LinearLayout>
+
+    </LinearLayout>
+    </ScrollView>

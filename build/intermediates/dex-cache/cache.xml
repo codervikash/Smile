@@ -2,25 +2,18 @@
 <items version="2" >
 
     <item
-        jar="/Volumes/Macintosh HD/Users/vikashkumar/Life/sdk/extras/android/m2repository/com/android/support/support-annotations/21.0.3/support-annotations-21.0.3.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
-        <dex dex="/Users/vikashkumar/Life/Android_Studio_Projects/Smile/app/build/intermediates/pre-dexed/debug/support-annotations-21.0.3-65184ae1923447496726592fe09d14f7b9594c89.jar" />
-    </item>
-    <item
-        jar="/Users/vikashkumar/Life/Android_Studio_Projects/Smile/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="81d42bf983a8741f4888a6e333e454e4a5e0eeb7">
-        <dex dex="/Users/vikashkumar/Life/Android_Studio_Projects/Smile/app/build/intermediates/pre-dexed/debug/classes-0d829fb6191805683751d8c059173dde3442251d.jar" />
-    </item>
-    <item
         jar="/Users/vikashkumar/Life/Android_Studio_Projects/Smile/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/classes.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
         <dex dex="/Users/vikashkumar/Life/Android_Studio_Projects/Smile/app/build/intermediates/pre-dexed/debug/classes-5d8b8a615265f90c580a043f285d58b860415d8a.jar" />
+    </item>
+    <item
+        jar="/Users/vikashkumar/Life/Android_Studio_Projects/Smile/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/21.0.3/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4b8945fc23a7461c6fdde15753456d64b0a9358b">
+        <dex dex="/Users/vikashkumar/Life/Android_Studio_Projects/Smile/app/build/intermediates/pre-dexed/debug/classes-55f0dab96773485b4cef9406ae96f949cf4a92db.jar" />
     </item>
     <item
         jar="/Users/vikashkumar/Life/Android_Studio_Projects/Smile/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/libs/internal_impl-21.0.3.jar"
@@ -30,11 +23,25 @@
         <dex dex="/Users/vikashkumar/Life/Android_Studio_Projects/Smile/app/build/intermediates/pre-dexed/debug/internal_impl-21.0.3-19590022c9096a928e444de3b60bc3c9097b6a2d.jar" />
     </item>
     <item
-        jar="/Users/vikashkumar/Life/Android_Studio_Projects/Smile/app/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.1.71/classes.jar"
+        jar="/Users/vikashkumar/Life/Android_Studio_Projects/Smile/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/classes.jar"
         jumboMode="false"
         revision="21.1.2"
-        sha1="0f6d5c1ef2e982c3b7858408e3df389cf5d202da">
-        <dex dex="/Users/vikashkumar/Life/Android_Studio_Projects/Smile/app/build/intermediates/pre-dexed/debug/classes-ef2c325280c34df79a7eeafb3eb9cb13dc14bfcd.jar" />
+        sha1="81d42bf983a8741f4888a6e333e454e4a5e0eeb7">
+        <dex dex="/Users/vikashkumar/Life/Android_Studio_Projects/Smile/app/build/intermediates/pre-dexed/debug/classes-0d829fb6191805683751d8c059173dde3442251d.jar" />
+    </item>
+    <item
+        jar="/Volumes/Macintosh HD/Users/vikashkumar/Life/sdk/extras/android/m2repository/com/android/support/support-annotations/21.0.3/support-annotations-21.0.3.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
+        <dex dex="/Users/vikashkumar/Life/Android_Studio_Projects/Smile/app/build/intermediates/pre-dexed/debug/support-annotations-21.0.3-65184ae1923447496726592fe09d14f7b9594c89.jar" />
+    </item>
+    <item
+        jar="/Users/vikashkumar/Life/Android_Studio_Projects/Smile/app/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="dd9247ea0fabe8ee479638c4b4a23e93752be256">
+        <dex dex="/Users/vikashkumar/Life/Android_Studio_Projects/Smile/app/build/intermediates/pre-dexed/debug/classes-4e631747355a3e80e71755c4961e56ea22b72a6b.jar" />
     </item>
 
 </items>
