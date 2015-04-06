@@ -48,7 +48,6 @@
         <activity
             android:name=".MainActivity"
             android:label="@string/title_activity_main" >
-
         </activity>
         <activity
             android:name=".AddDonation"
@@ -70,7 +69,6 @@
             android:name=".LoginActivity"
             android:label="@string/title_activity_login"
             android:windowSoftInputMode="adjustResize|stateHidden" >
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
