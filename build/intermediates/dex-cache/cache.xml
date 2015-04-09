@@ -2,11 +2,39 @@
 <items version="2" >
 
     <item
-        jar="/Users/vikashkumar/Life/Android_Studio_Projects/Smile/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/classes.jar"
+        jar="/Users/vikashkumar/Life/Android_Studio_Projects/Smile/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-plus/7.0.0/classes.jar"
         jumboMode="false"
         revision="21.1.2"
-        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
-        <dex dex="/Users/vikashkumar/Life/Android_Studio_Projects/Smile/app/build/intermediates/pre-dexed/debug/classes-5d8b8a615265f90c580a043f285d58b860415d8a.jar" />
+        sha1="0e8228b4bc69c6a2c8d7c18498a77e53417d2574">
+        <dex dex="/Users/vikashkumar/Life/Android_Studio_Projects/Smile/app/build/intermediates/pre-dexed/debug/classes-5e019310c1d57020e17c24fa48925e3662e24e33.jar" />
+    </item>
+    <item
+        jar="/Users/vikashkumar/Life/Android_Studio_Projects/Smile/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/7.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="17f8750d5c0749e44dd7c54aa390d9c937803825">
+        <dex dex="/Users/vikashkumar/Life/Android_Studio_Projects/Smile/app/build/intermediates/pre-dexed/debug/classes-e712d652f3bf187b96a22347e3e797896350768d.jar" />
+    </item>
+    <item
+        jar="/Users/vikashkumar/Life/Android_Studio_Projects/Smile/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/7.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="9224bc4c54ba95147c7eabd874573763c07cb6be">
+        <dex dex="/Users/vikashkumar/Life/Android_Studio_Projects/Smile/app/build/intermediates/pre-dexed/debug/classes-7b82c6df46aa721f44c441259ebeaaf74239e83c.jar" />
+    </item>
+    <item
+        jar="/Users/vikashkumar/Life/Android_Studio_Projects/Smile/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.0.0/libs/internal_impl-22.0.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="b5b92f469d515a13d778900f6d50c03d12f35504">
+        <dex dex="/Users/vikashkumar/Life/Android_Studio_Projects/Smile/app/build/intermediates/pre-dexed/debug/internal_impl-22.0.0-a33da85773921f6500f8f29e5a4159cf8cd95853.jar" />
+    </item>
+    <item
+        jar="/Users/vikashkumar/Life/Android_Studio_Projects/Smile/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/7.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="a08d65794b844d8e7540bf9a33859bf3b2482d7f">
+        <dex dex="/Users/vikashkumar/Life/Android_Studio_Projects/Smile/app/build/intermediates/pre-dexed/debug/classes-524ce192ae44f5426f5ff56aa56a7ce47c51855b.jar" />
     </item>
     <item
         jar="/Users/vikashkumar/Life/Android_Studio_Projects/Smile/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/21.0.3/classes.jar"
@@ -16,32 +44,39 @@
         <dex dex="/Users/vikashkumar/Life/Android_Studio_Projects/Smile/app/build/intermediates/pre-dexed/debug/classes-55f0dab96773485b4cef9406ae96f949cf4a92db.jar" />
     </item>
     <item
-        jar="/Users/vikashkumar/Life/Android_Studio_Projects/Smile/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/libs/internal_impl-21.0.3.jar"
+        jar="/Users/vikashkumar/Life/Android_Studio_Projects/Smile/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/7.0.0/classes.jar"
         jumboMode="false"
         revision="21.1.2"
-        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
-        <dex dex="/Users/vikashkumar/Life/Android_Studio_Projects/Smile/app/build/intermediates/pre-dexed/debug/internal_impl-21.0.3-19590022c9096a928e444de3b60bc3c9097b6a2d.jar" />
+        sha1="73ccb92b70112f2e463e415ef8d7275de7da6516">
+        <dex dex="/Users/vikashkumar/Life/Android_Studio_Projects/Smile/app/build/intermediates/pre-dexed/debug/classes-bc40719c40f2c784d6902ad6de155f37c84e0165.jar" />
     </item>
     <item
-        jar="/Users/vikashkumar/Life/Android_Studio_Projects/Smile/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/classes.jar"
+        jar="/Users/vikashkumar/Life/Android_Studio_Projects/Smile/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/classes.jar"
         jumboMode="false"
         revision="21.1.2"
-        sha1="81d42bf983a8741f4888a6e333e454e4a5e0eeb7">
-        <dex dex="/Users/vikashkumar/Life/Android_Studio_Projects/Smile/app/build/intermediates/pre-dexed/debug/classes-0d829fb6191805683751d8c059173dde3442251d.jar" />
+        sha1="d84409890828e07d344a3b9b1da545dba9897b51">
+        <dex dex="/Users/vikashkumar/Life/Android_Studio_Projects/Smile/app/build/intermediates/pre-dexed/debug/classes-140e399388ce342e00568539626322b2ee9537ea.jar" />
     </item>
     <item
-        jar="/Volumes/Macintosh HD/Users/vikashkumar/Life/sdk/extras/android/m2repository/com/android/support/support-annotations/21.0.3/support-annotations-21.0.3.jar"
+        jar="/Volumes/Macintosh HD/Users/vikashkumar/Life/sdk/extras/android/m2repository/com/android/support/support-annotations/22.0.0/support-annotations-22.0.0.jar"
         jumboMode="false"
         revision="21.1.2"
-        sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
-        <dex dex="/Users/vikashkumar/Life/Android_Studio_Projects/Smile/app/build/intermediates/pre-dexed/debug/support-annotations-21.0.3-65184ae1923447496726592fe09d14f7b9594c89.jar" />
+        sha1="685d0b2c590447e85284ed84712cb363ba04eff8">
+        <dex dex="/Users/vikashkumar/Life/Android_Studio_Projects/Smile/app/build/intermediates/pre-dexed/debug/support-annotations-22.0.0-af58698fd2e7f07a6ca77772d5fc74ef570e5a67.jar" />
     </item>
     <item
-        jar="/Users/vikashkumar/Life/Android_Studio_Projects/Smile/app/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/classes.jar"
+        jar="/Users/vikashkumar/Life/Android_Studio_Projects/Smile/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.0.0/classes.jar"
         jumboMode="false"
         revision="21.1.2"
-        sha1="dd9247ea0fabe8ee479638c4b4a23e93752be256">
-        <dex dex="/Users/vikashkumar/Life/Android_Studio_Projects/Smile/app/build/intermediates/pre-dexed/debug/classes-4e631747355a3e80e71755c4961e56ea22b72a6b.jar" />
+        sha1="4c93d99d454c975536bbe3b42283eee847f03ea3">
+        <dex dex="/Users/vikashkumar/Life/Android_Studio_Projects/Smile/app/build/intermediates/pre-dexed/debug/classes-c76019b23be79f5a66ba0a939ded0ff3918c9778.jar" />
+    </item>
+    <item
+        jar="/Users/vikashkumar/Life/Android_Studio_Projects/Smile/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4e86306289ace4aa0cfec44a05ed2b410d36989d">
+        <dex dex="/Users/vikashkumar/Life/Android_Studio_Projects/Smile/app/build/intermediates/pre-dexed/debug/classes-5e2c81b54eac256680bbd1ae73b98e6641032652.jar" />
     </item>
 
 </items>
