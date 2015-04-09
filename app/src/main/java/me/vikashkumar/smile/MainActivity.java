@@ -1,9 +1,11 @@
 package me.vikashkumar.smile;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.location.Location;
-import android.location.LocationListener;
 import android.os.Bundle;
+import android.provider.Settings;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -11,7 +13,6 @@ import android.widget.Toast;
 
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
-import com.google.android.gms.location.LocationRequest;
 import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -24,74 +25,75 @@ import com.google.android.gms.maps.model.MarkerOptions;
 
 
 public class MainActivity extends ActionBarActivity implements
-        LocationListener,
-        OnMapReadyCallback,
         GoogleApiClient.ConnectionCallbacks,
-       GoogleApiClient.OnConnectionFailedListener {
+       GoogleApiClient.OnConnectionFailedListener,
+        OnMapReadyCallback{
 
 
 
     private GoogleApiClient mGoogleApiClient;
+    public Location currentLocation;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        MapFragment mapFragment = (MapFragment) getFragmentManager()
-                .findFragmentById(R.id.map);
 
         mGoogleApiClient = new GoogleApiClient.Builder(this)
                 .addConnectionCallbacks(this)
                 .addOnConnectionFailedListener(this)
                 .addApi(LocationServices.API)
                 .build();
-
-        mapFragment.getMapAsync(this);
     }
 
+    @Override
+    protected void onStart() {
+        super.onStart();
+        // Connect the client.
+        mGoogleApiClient.connect();
+    }
 
-    protected void createLocationRequest() {
-        LocationRequest mLocationRequest = new LocationRequest();
-        mLocationRequest.setInterval(10000);
-        mLocationRequest.setFastestInterval(5000);
-        mLocationRequest.setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY);
+    @Override
+    protected void onStop() {
+        // Disconnecting the client invalidates it.
+        mGoogleApiClient.disconnect();
+        super.onStop();
     }
 
 
     @Override
-    public void onLocationChanged(Location location) {
-        // TODO Auto-generated method stub
+    public void onConnected(Bundle bundle) {
 
-    }
+        Location location = LocationServices.FusedLocationApi.getLastLocation(
+                mGoogleApiClient);
+        currentLocation(location);
+        if (location != null) {
+            Toast.makeText(getApplicationContext(), location.toString(), Toast.LENGTH_LONG).show();
 
-    @Override
-    public void onStatusChanged(String provider, int status, Bundle extras) {
-        // TODO Auto-generated method stub
+            currentLocation = location;
 
-    }
+            MapFragment mapFragment = (MapFragment) getFragmentManager()
+                    .findFragmentById(R.id.map);
+            mapFragment.getMapAsync(this);
 
-    @Override
-    public void onProviderEnabled(String provider) {
-        // TODO Auto-generated method stub
-
-    }
-
-    @Override
-    public void onProviderDisabled(String provider) {
-        // TODO Auto-generated method stub
-
-    }
-
-    @Override
-    public void onConnectionFailed(ConnectionResult arg0) {
-        // TODO Auto-generated method stub
-
-    }
-
-    @Override
-    public void onConnected(Bundle connectionHint) {
-        // TODO Auto-generated method stub
-
+        }
+        else {
+            new AlertDialog.Builder(MainActivity.this)
+                    .setTitle("Please activate location")
+                    .setMessage("Click ok to goto settings else exit.")
+                    .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+                            Intent intent = new Intent(Settings.ACTION_LOCATION_SOURCE_SETTINGS);
+                            startActivity(intent);
+                        }
+                    })
+                    .setNegativeButton(android.R.string.no, new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+                            System.exit(0);
+                        }
+                    })
+                    .show();
+        }
 
     }
 
@@ -100,20 +102,25 @@ public class MainActivity extends ActionBarActivity implements
 
     }
 
+    @Override
+    public void onConnectionFailed(ConnectionResult connectionResult) {
+
+    }
+
+    /**
+     * A placeholder fragment containing a simple view.
+     */
+
+    public Location currentLocation(Location location) {
+        return location;
+    }
 
     @Override
     public void onMapReady(GoogleMap map) {
 
 
-//        Location mLastLocation = LocationServices.FusedLocationApi.getLastLocation(
-//                mGoogleApiClient);
-//
-//        LatLng userLocation = new LatLng(mLastLocation.getLatitude(),mLastLocation.getLongitude());
+        LatLng userLocation = new LatLng(currentLocation.getLatitude(),currentLocation.getLongitude());
 
-
-        Toast.makeText(getApplicationContext(), "maps",Toast.LENGTH_SHORT).show();
-
-        LatLng userLocation = new LatLng(-33.867, 151.206);
         map.setMyLocationEnabled(true);
         map.moveCamera(CameraUpdateFactory.newLatLngZoom(userLocation, 13));
 
@@ -173,10 +180,5 @@ public class MainActivity extends ActionBarActivity implements
 
         return super.onOptionsItemSelected(item);
     }
-
-    /**
-     * A placeholder fragment containing a simple view.
-     */
-
 
 }
