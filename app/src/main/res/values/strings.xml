@@ -9,6 +9,7 @@
     <string name="action_help">Help</string>
     <string name="action_about">About</string>
     <string name="action_mapview">Map view</string>
+    <string name="action_signout">Sign out</string>
 
     <color name="Primary_color">#ff0c0f3d</color>
     <color name="primary_dark">#ff04072c</color>
@@ -27,5 +28,4 @@
     <string name="option2">Cloths</string>
     <string name="option3">Other</string>
     <string name="title_activity_web_view">WebView</string>
-
 </resources>

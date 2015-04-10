@@ -66,7 +66,6 @@ public class MainActivity extends ActionBarActivity implements
 
         Location location = LocationServices.FusedLocationApi.getLastLocation(
                 mGoogleApiClient);
-        currentLocation(location);
         if (location != null) {
             Toast.makeText(getApplicationContext(), location.toString(), Toast.LENGTH_LONG).show();
 
@@ -105,14 +104,6 @@ public class MainActivity extends ActionBarActivity implements
     @Override
     public void onConnectionFailed(ConnectionResult connectionResult) {
 
-    }
-
-    /**
-     * A placeholder fragment containing a simple view.
-     */
-
-    public Location currentLocation(Location location) {
-        return location;
     }
 
     @Override
@@ -177,6 +168,7 @@ public class MainActivity extends ActionBarActivity implements
         }if (id == R.id.action_about) {
             startActivity(new Intent(this, SettingsActivity.class));
         }
+
 
         return super.onOptionsItemSelected(item);
     }
