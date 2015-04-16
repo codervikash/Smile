@@ -8,7 +8,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
-import com.facebook.appevents.AppEventsLogger;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.plus.Plus;
@@ -37,7 +36,7 @@ public class LoginActivity extends Activity implements
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        first_time_check();
+//        first_time_check();
         setContentView(R.layout.activity_login);
         mGoogleApiClient = new GoogleApiClient.Builder(this)
                 .addConnectionCallbacks(this)
@@ -54,10 +53,10 @@ public class LoginActivity extends Activity implements
                 if (v.getId() == R.id.sign_in_button && !mGoogleApiClient.isConnecting()) {
                     mSignInClicked = true;
                     mGoogleApiClient.connect();
-                    SharedPreferences login = getSharedPreferences(LOGIN_PREF, MODE_PRIVATE);
-                    SharedPreferences.Editor editor = login.edit();
-                    editor.putBoolean("login", true);
-                    editor.commit();
+//                    SharedPreferences login = getSharedPreferences(LOGIN_PREF, MODE_PRIVATE);
+//                    SharedPreferences.Editor editor = login.edit();
+//                    editor.putBoolean("login", true);
+//                    editor.apply();
                 } else {
 
                     Toast.makeText(getApplicationContext(), "Login", Toast.LENGTH_SHORT).show();
@@ -146,21 +145,21 @@ public class LoginActivity extends Activity implements
 
 //    Facebook app install and tracking
 
-    @Override
-    protected void onResume() {
-        super.onResume();
-
-        // Logs 'install' and 'app activate' App Events.
-        AppEventsLogger.activateApp(this);
-    }
-
-    @Override
-    protected void onPause() {
-        super.onPause();
-
-        // Logs 'app deactivate' App Event.
-        AppEventsLogger.deactivateApp(this);
-    }
+//    @Override
+//    protected void onResume() {
+//        super.onResume();
+//
+//        // Logs 'install' and 'app activate' App Events.
+//        AppEventsLogger.activateApp(this);
+//    }
+//
+//    @Override
+//    protected void onPause() {
+//        super.onPause();
+//
+//        // Logs 'app deactivate' App Event.
+//        AppEventsLogger.deactivateApp(this);
+//    }
 
 
 }

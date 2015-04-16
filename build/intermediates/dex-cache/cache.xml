@@ -2,6 +2,13 @@
 <items version="2" >
 
     <item
+        jar="/Users/vikashkumar/Life/Android_Studio_Projects/Smile/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="d84409890828e07d344a3b9b1da545dba9897b51">
+        <dex dex="/Users/vikashkumar/Life/Android_Studio_Projects/Smile/app/build/intermediates/pre-dexed/debug/classes-140e399388ce342e00568539626322b2ee9537ea.jar" />
+    </item>
+    <item
         jar="/Users/vikashkumar/Life/Android_Studio_Projects/Smile/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-plus/7.0.0/classes.jar"
         jumboMode="false"
         revision="21.1.2"
@@ -30,34 +37,6 @@
         <dex dex="/Users/vikashkumar/Life/Android_Studio_Projects/Smile/app/build/intermediates/pre-dexed/debug/internal_impl-22.0.0-a33da85773921f6500f8f29e5a4159cf8cd95853.jar" />
     </item>
     <item
-        jar="/Users/vikashkumar/Life/Android_Studio_Projects/Smile/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/7.0.0/classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="a08d65794b844d8e7540bf9a33859bf3b2482d7f">
-        <dex dex="/Users/vikashkumar/Life/Android_Studio_Projects/Smile/app/build/intermediates/pre-dexed/debug/classes-524ce192ae44f5426f5ff56aa56a7ce47c51855b.jar" />
-    </item>
-    <item
-        jar="/Users/vikashkumar/Life/Android_Studio_Projects/Smile/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/21.0.3/classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="4b8945fc23a7461c6fdde15753456d64b0a9358b">
-        <dex dex="/Users/vikashkumar/Life/Android_Studio_Projects/Smile/app/build/intermediates/pre-dexed/debug/classes-55f0dab96773485b4cef9406ae96f949cf4a92db.jar" />
-    </item>
-    <item
-        jar="/Users/vikashkumar/Life/Android_Studio_Projects/Smile/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/7.0.0/classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="73ccb92b70112f2e463e415ef8d7275de7da6516">
-        <dex dex="/Users/vikashkumar/Life/Android_Studio_Projects/Smile/app/build/intermediates/pre-dexed/debug/classes-bc40719c40f2c784d6902ad6de155f37c84e0165.jar" />
-    </item>
-    <item
-        jar="/Users/vikashkumar/Life/Android_Studio_Projects/Smile/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="d84409890828e07d344a3b9b1da545dba9897b51">
-        <dex dex="/Users/vikashkumar/Life/Android_Studio_Projects/Smile/app/build/intermediates/pre-dexed/debug/classes-140e399388ce342e00568539626322b2ee9537ea.jar" />
-    </item>
-    <item
         jar="/Volumes/Macintosh HD/Users/vikashkumar/Life/sdk/extras/android/m2repository/com/android/support/support-annotations/22.0.0/support-annotations-22.0.0.jar"
         jumboMode="false"
         revision="21.1.2"
@@ -72,11 +51,46 @@
         <dex dex="/Users/vikashkumar/Life/Android_Studio_Projects/Smile/app/build/intermediates/pre-dexed/debug/classes-c76019b23be79f5a66ba0a939ded0ff3918c9778.jar" />
     </item>
     <item
+        jar="/Users/vikashkumar/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-android/1.1.4/129874135e6081269ace2312092031558865de12/bolts-android-1.1.4.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="129874135e6081269ace2312092031558865de12">
+        <dex dex="/Users/vikashkumar/Life/Android_Studio_Projects/Smile/app/build/intermediates/pre-dexed/debug/bolts-android-1.1.4-14990a2ceaa9b5d5efee40670d965a008d9d92ac.jar" />
+    </item>
+    <item
+        jar="/Users/vikashkumar/Life/Android_Studio_Projects/Smile/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/7.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="a08d65794b844d8e7540bf9a33859bf3b2482d7f">
+        <dex dex="/Users/vikashkumar/Life/Android_Studio_Projects/Smile/app/build/intermediates/pre-dexed/debug/classes-524ce192ae44f5426f5ff56aa56a7ce47c51855b.jar" />
+    </item>
+    <item
+        jar="/Users/vikashkumar/Life/Android_Studio_Projects/Smile/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="0f254ec13d6671680482d2218f01ecf14dfa93e6">
+        <dex dex="/Users/vikashkumar/Life/Android_Studio_Projects/Smile/app/build/intermediates/pre-dexed/debug/classes-be7a35d013ebb04120b86567327a8c0ba81121b0.jar" />
+    </item>
+    <item
         jar="/Users/vikashkumar/Life/Android_Studio_Projects/Smile/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.0.0/classes.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="4e86306289ace4aa0cfec44a05ed2b410d36989d">
         <dex dex="/Users/vikashkumar/Life/Android_Studio_Projects/Smile/app/build/intermediates/pre-dexed/debug/classes-5e2c81b54eac256680bbd1ae73b98e6641032652.jar" />
+    </item>
+    <item
+        jar="/Users/vikashkumar/Life/Android_Studio_Projects/Smile/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/21.0.3/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4b8945fc23a7461c6fdde15753456d64b0a9358b">
+        <dex dex="/Users/vikashkumar/Life/Android_Studio_Projects/Smile/app/build/intermediates/pre-dexed/debug/classes-55f0dab96773485b4cef9406ae96f949cf4a92db.jar" />
+    </item>
+    <item
+        jar="/Users/vikashkumar/Life/Android_Studio_Projects/Smile/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/7.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="73ccb92b70112f2e463e415ef8d7275de7da6516">
+        <dex dex="/Users/vikashkumar/Life/Android_Studio_Projects/Smile/app/build/intermediates/pre-dexed/debug/classes-bc40719c40f2c784d6902ad6de155f37c84e0165.jar" />
     </item>
 
 </items>
