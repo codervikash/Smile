@@ -110,7 +110,7 @@ public class WebView extends ActionBarActivity implements
             double longLat= userLocation.longitude + (0.0000001 - i);
             map.addMarker(new MarkerOptions()
                     .position(new LatLng(lati, longLat))
-                    .title("Hii")
+                    .title("Sanjay Mandal")
                     .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_AZURE)));
         }
 
